@@ -188,7 +188,6 @@ body {
 @media (max-width: 767px) {
 	
 	.nav li {
-		text-align: left;
 		white-space: nowrap;
 	}
 	
