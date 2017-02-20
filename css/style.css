@@ -84,24 +84,33 @@ body {
 }
 
 .navbar {
-	background-color: #e7e6e5;
+	background-image: url("../images/barrasAtencion.jpg");
+	background-size: contain;
 	background-color: rgba( 180, 15, 15, .85 );
 	border-bottom: 0 none;
-	font-size: 13px;
 	transition: .25s all linear;
+	min-height: 55px;
 }
 
 .navbar.inv {
+	background-image: none;
 	background-color: rgba( 0, 0, 0, .5 );
 	border-bottom: 1px solid #bfbfbf;
 }
 
 .navbar .nav a {
-	color: #FFF;
+	color: #000;
+	padding-top: 15px;
 	font-family: "Titillium Web", sans-serif;
-	font-weight: 600;
-	transition: all .5 linear;
+	font-size: 14px;
+	font-weight: 900;
+	transition: all .5 linear;	
+	padding-bottom: 0;
+    display:table-cell;
+    cursor: pointer;
 }
+.navbar .nav li:hover a{color: #F00}
+.navbar .nav li {display:table-cell;float: none;}
 
 .navbar.inv a {
 	color: #FFF;
@@ -129,7 +138,7 @@ body {
 }
 
 .active-menu {
-	background-color: #FFF;
+	background-color: #38322b;
 	content: '.';
 	display: block;
 	height: 5px;
