@@ -49,14 +49,14 @@ $(document).ready(function(e) {
 	* = Controls active menu *
 	* Hover text for the last slide
 	*************************/
-	$('#slide-3 img').each(function(index, element) {
+	$('#slide-4 img').each(function(index, element) {
 		var time = new Date().getTime();
 		var oldHref = $(this).attr('src');
 		var myImg = $('<img />').attr('src', oldHref + '?' + time );
 		
 		myImg.load(function(e) {
 			img_loaded += 1;;
-			if ( img_loaded == $('#slide-3 img').length ) {
+			if ( img_loaded == $('#slide-4 img').length ) {
 				$(function() {
 					var pause = 10;
 					$(document).scroll(function(e) {
@@ -96,7 +96,7 @@ $(function() {
 	var pause = 50; // will only process code within delay(function() { ... }) every 100ms.
 	$(window).resize(function() {
 		delay(function() {
-				var gallery_images = $('#slide-3 img');
+				var gallery_images = $('#slide-4 img');
 				
 				var images_per_row = 0;
 				if ( gallery_images.length % 2 == 0 ) {
@@ -105,18 +105,18 @@ $(function() {
 					images_per_row = gallery_images.length / 2 + 1;
 				}
 				
-				var gallery_width = $('#slide-3 img').width() * $('#slide-3 img').length;
+				var gallery_width = $('#slide-4 img').width() * $('#slide-4 img').length;
 				gallery_width /= 2;
-				if ( $('#slide-3 img').length % 2 != 0 ) {
-					gallery_width += $('#slide-3 img').width();
+				if ( $('#slide-4 img').length % 2 != 0 ) {
+					gallery_width += $('#slide-4 img').width();
 				}
 				
-				$('#slide-3 .row').css('width', gallery_width );
+				$('#slide-4 .row').css('width', gallery_width );
 				
-				var left_pos = $('#slide-3 .row').width() - $('body').width();
+				var left_pos = $('#slide-4 .row').width() - $('body').width();
 				left_pos /= -2;
 				
-				$('#slide-3 .row').css('left', left_pos);
+				$('#slide-4 .row').css('left', left_pos);
 			
 			},
 			pause
@@ -252,12 +252,12 @@ jQuery(document).ready(function ($) {
 ******************/
 jQuery(document).ready(function ($) {
 	//Cache some variables
-	var images = $('#slide-3 a');
+	var images = $('#slide-4 a');
 	
 	images.hover(
 		function(e) {
 			var asta = $(this).find('img');
-			$('#slide-3 img').not( asta ).stop(false, false).animate(
+			$('#slide-4 img').not( asta ).stop(false, false).animate(
 				{
 					opacity: .5
 				},
@@ -271,7 +271,7 @@ jQuery(document).ready(function ($) {
 			$(this).prepend(zoom);
 		},
 		function(e) {
-			$('#slide-3 img').stop(false, false).animate(
+			$('#slide-4 img').stop(false, false).animate(
 				{
 					opacity: 1
 				},
@@ -310,15 +310,15 @@ jQuery(document).ready(function ($) {
 				offset_top = $('.slide[data-slide="' + (datasheet+1) + '"]').offset().top;
 				break;
 			case 'arrow-left':
-				offset_left = $('#slide-3 .row').offset().left + 452;
+				offset_left = $('#slide-4 .row').offset().left + 452;
 				if ( offset_left > 0 ) {
 					offset_left = '0px';
 				}
 				break;
 			case 'arrow-right':
-				offset_left = $('#slide-3 .row').offset().left - 452;
-				if ( offset_left < $('body').width() - $('#slide-3 .row').width() ) {
-					offset_left = $('body').width() - $('#slide-3 .row').width();
+				offset_left = $('#slide-4 .row').offset().left - 452;
+				if ( offset_left < $('body').width() - $('#slide-4 .row').width() ) {
+					offset_left = $('body').width() - $('#slide-4 .row').width();
 				}
 				break;
 		}
@@ -330,8 +330,8 @@ jQuery(document).ready(function ($) {
 		}
 		
 		if ( offset_left != false ) {
-			if ( $('#slide-3 .row').width() != $('body').width() ) {
-				$('#slide-3 .row').stop(false, false).animate({
+			if ( $('#slide-4 .row').width() != $('body').width() ) {
+				$('#slide-4 .row').stop(false, false).animate({
 					left: offset_left
 				}, 1500, 'easeInOutQuart');
 			}
