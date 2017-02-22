@@ -1,3 +1,55 @@
+@-webkit-keyframes wave-animation-s {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10000px 0;
+  }
+}
+@-moz-keyframes wave-animation-s {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10000px 0;
+  }
+}
+@-o-keyframes wave-animation-s {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10000px 0;
+  }
+}
+@keyframes wave-animation-s {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10000px 0;
+  }
+}
+#movingCar{
+
+  background: url(../images/bg_slider_bottom.png) repeat-x 0 0;
+  top: -110px;
+  content: "";
+  display: block;
+  height: 73px;
+  left: 0;
+  position: relative;
+  width: 1000000%;
+  z-index: 6;
+  -webkit-animation: wave-animation-s 180s infinite linear;
+  /* Safari 4+ */
+  -moz-animation: wave-animation-s 180s infinite linear;
+  /* Fx 5+ */
+  -o-animation: wave-animation-s 180s infinite linear;
+  /* Opera 12+ */
+  animation: wave-animation-s 180s infinite linear;
+  /* IE 10+ */
+}
 /*
  * Author: Carlos Alvarez
  * URL: http://alvarez.is
@@ -701,5 +753,6 @@ body {
 .navigation-slide {
 	cursor: pointer;
 }
+
 
 
