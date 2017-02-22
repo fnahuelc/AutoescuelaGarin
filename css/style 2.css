@@ -50,6 +50,42 @@
   animation: wave-animation-s 180s infinite linear;
   /* IE 10+ */
 }
+
+  /* ANIMACION DE LAS IMAGENES */
+
+@-webkit-keyframes image-animation-s {
+  0% {
+    background-size: cover;
+  }
+  100% {
+    background-size: scale(1.5);
+  }
+}
+@-moz-keyframes image-animation-s {
+    0% {
+    background-size: cover;
+  }
+  100% {
+    background-size: 150%;
+  }
+}
+@-o-keyframes image-animation-s {
+   0% {
+    background-size: cover;
+  }
+  100% {
+    background-size: 150%;
+  }
+}
+@keyframes image-animation-s {
+    0% {
+    background-size: cover;
+  }
+  100% {
+    background-size: 150%;
+  }
+}
+
 /*
  * Author: Carlos Alvarez
  * URL: http://alvarez.is
@@ -388,13 +424,19 @@ body {
 	background-size: cover;
 	background-position: center center;
 	height: 700px;
-	}
+}   	
+
 #myCarousel .item.uno {background-image: url("../images/carousel1.jpg")}
 #myCarousel .item.dos {background-image: url("../images/carousel2.jpg")}
 #myCarousel .item.tres {background-image: url("../images/carousel3.jpg")}
 #myCarousel .item.cuatro{background-image: url("../images/carousel4.jpg")}
 #myCarousel .item.cinco{background-image: url("../images/carousel5.jpg")}
-.carousel-control .glyphicon{z-index: 120;}
+.carousel-control i{
+	font-size: 50px;
+	top: 50%;
+	padding: 10px;
+	position: relative;
+	z-index: 120;}
 /* Declare heights because of positioning of img element */
 
 
@@ -458,6 +500,8 @@ body {
 		height: 5px;
 		margin: 0 auto;
 		width: 33%;
+		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 	
 	.subtitle-row {
@@ -494,7 +538,16 @@ body {
 		color: white;
 	}
 	
+	.videos {
+		margin: 0px 30px 0px 30px;
+		padding: 0 0 70px 0;
 
+	}
+	.videos div iframe{
+	  background:orange;
+	  width:30vw;
+	  height: 16.86vw;
+	}
 @media (max-width: 767px) {
 	.title-row {
 		font-size: 34px;
@@ -518,6 +571,15 @@ body {
 	
 	.content-row h4 {
 		font-size: 20px;
+	}
+	.videos {
+		margin: 0px 10px 0px 10px;
+		padding: 0 0 70px 0;
+	}
+	.videos div iframe{
+	  background:orange;
+	  width:90vw;
+	  height: 50.62vw;
 	}
 }
 
