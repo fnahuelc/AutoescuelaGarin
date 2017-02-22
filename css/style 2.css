@@ -314,7 +314,6 @@ body {
     position: absolute;
     top: 100px;
     width: 100%;
-    color: #ebce45;
     z-index: 100;
 
 }
@@ -324,24 +323,28 @@ body {
 }
 .carousel-caption p{
 	font-size: 40px;
+	font-weight: 900;
+	color:#EEE;
+;
 }
 .carousel-caption .btn{
 	font-size: 20px;
+	background-color: #ebce45;
+	color: #39332d;
 }
 #myCarousel .item{
-	background-image: url("../images/bg1.jpg");
 	background-size: cover;
-	background-position: center center
-}
+	background-position: center center;
+	height: 700px;
+	}
 #myCarousel .item.uno {background-image: url("../images/carousel1.jpg")}
 #myCarousel .item.dos {background-image: url("../images/carousel2.jpg")}
 #myCarousel .item.tres {background-image: url("../images/carousel3.jpg")}
 #myCarousel .item.cuatro{background-image: url("../images/carousel4.jpg")}
+#myCarousel .item.cinco{background-image: url("../images/carousel5.jpg")}
+.carousel-control .glyphicon{z-index: 120;}
 /* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 700px;
-  background-color: #777;
-}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
