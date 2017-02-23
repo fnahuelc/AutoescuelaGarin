@@ -821,10 +821,10 @@ body {
 	height: 30vw;
 }
 @media (max-width: 767px) {
-	
+
 .mapa iframe{
-	width: 40vw;
-	height: 30vw;
+	width: 90vw;
+	height: 60vw;
 }
 }
 
