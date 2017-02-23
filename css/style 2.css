@@ -844,12 +844,12 @@ body {
 .contactenos .centrar{
 	padding-left: 15px;
 }
-.contactenos .centrar h2,
-.contactenos .centrar h3
+.contactenos .centrar h1
 {
 	width: 90%;
 	margin-left: 5vw;
 	margin-right: 5vw;
+	padding-top: 10px;
 }
 
 .contactForm *{
