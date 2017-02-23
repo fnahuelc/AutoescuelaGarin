@@ -818,14 +818,38 @@ body {
 
 .mapa iframe{
 	width: 40vw;
-	height: 30vw;
+	height: 438px;
 }
 @media (max-width: 767px) {
 
-.mapa iframe{
-	width: 90vw;
+	.mapa iframe{
+		width: 90vw;
 	height: 60vw;
+	}
 }
+#slide-6 .container>div {
+	padding: 10px 0;
+}
+#slide-6 .title-row{
+	margin-bottom: 20px;
+}
+.contactenos{
+	font-size: 26px;
+	text-align: center;
+	color: #ff4842;
+}
+.contactenos>div{
+	padding: 0;
+	margin: 0;}
+.contactenos .centrar{
+	padding-left: 15px;
+}
+.contactenos .centrar h2,
+.contactenos .centrar h3
+{
+	width: 90%;
+	margin-left: 5vw;
+	margin-right: 5vw;
 }
 
 .contactForm *{
@@ -836,12 +860,31 @@ body {
 	width: 100%;
 	text-align: center;
 }
-.contactForm input,
-.contactForm textarea
-{
-	width: 80% !important;
-	list-style: none !important;
-	margin: 5px 10% 5px 10% !important;
+.contactForm li{
+	width: 90% ;
+	list-style: none ;
+	margin: 10px 5vw 10px 5vw ;
 }
+.contactForm input,
+.contactForm textarea{
+	margin:0;
+	padding: 0;
+	width: 100%;
+}
+.contactForm textarea{
+}
+.form-signin .form-control {
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+  box-shadow: 2px 2px 2px red;
+}
+
+
 
 

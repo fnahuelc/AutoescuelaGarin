@@ -37,9 +37,9 @@
                     <li data-slide="1" class="col-12 col-sm-2"><a id="menu-link-1" href="#slide-1"><span class="icon icon-home"></span> <span class="text">INICIO</span></a></li>
                     <li data-slide="2" class="col-12 col-sm-2"><a id="menu-link-2" href="#slide-2"><span class="icon icon-road"></span> <span class="text">AUTOESCUELA</span></a></li>
                     <li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3"><span class="icon icon-book"></span> <span class="text">CURSOS</span></a></li>
-                    <li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-5"><span class="icon icon-download-alt"></span> <span class="text">TEORIA</span></a></li>
-                    <li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-6"><span class="icon icon-dollar"></span> <span class="text">OFERTAS</span></a></li>
-                    <li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-7"><span class="icon icon-envelope"></span> <span class="text">CONTACTO</span></a></li>
+                    <li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4"><span class="icon icon-download-alt"></span> <span class="text">TEORIA</span></a></li>
+                    <li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5"><span class="icon icon-dollar"></span> <span class="text">OFERTAS</span></a></li>
+                    <li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6"><span class="icon icon-envelope"></span> <span class="text">CONTACTO</span></a></li>
                 </ul>
                 <div class="row">
                     <div class="col-sm-2 active-menu"></div>
@@ -436,45 +436,46 @@
     <div class="slide story" id="slide-6" data-slide="6">
         <div class="container">
             <div class="row title-row">
-                <div class="col-12 font-light">Dejanos un <span class="font-semibold">mensaje</span></div>
+                <div class="col-12 font-light">Visitenos en <span class="font-semibold">nuestro local de zona norte</span> o <span class="font-semibold"> contáctese</span> con nosotros</div>
             </div>
             <!-- /row -->
-            <div class="row line-row">
-                <div class="hr">&nbsp;</div>
+            <div class="row subtitle-row contactenos">
+                <div class="col-12 col-sm-6 font-semibold"><h2>Padre Perna 1015, Garin, Buenos Aires</h2></div>
+            	<div class="col-12 col-sm-6 centrar"><h2><span class="font-semibold">(0348) 445-7038</span></h2><h3><span class="font-semibold">escuelagarin1@gmail.com</span></h3></div>
             </div>
-            <div class="mapa row content-row">
-            	<div class="col-12 col-sm-6">
+            <div class="row content-row">
+            	<div class="mapa col-12 col-sm-6">
             		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.277776862336!2d-58.73151488461155!3d-34.419698680507494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca1e6fd0860b9%3A0xa0b5585eccffd7e8!2sAutoescuela+Garin!5e0!3m2!1ses-419!2sar!4v1487809795757" frameborder="0" style="border:0" allowfullscreen></iframe>
             	</div>
             	<div class="col-12 col-sm-6">
             		<div class="row contactForm">
-					    <form action="#">
-					      <ul>
-					        <li>
-					          <p class="left">
-					            <input type="text" name="first_name" placeholder="Nombre" />
-					          </p>
-					          <p class="pull-right">
-					            <input type="text" name="last_name" placeholder="Apellido" />      
-					          </p>
-					        </li>
-					        
-					        <li>
-					          <p>
-					            <input type="email" name="email" placeholder="Email"/>
-					          </p>
-					        </li>        
-					        <li><div class="divider"></div></li>
-					        <li>
-					          <textarea cols="46" rows="3" name="comments" placeholder="Escribenos un comentario"></textarea>
-					        </li>
-					        <li>
-					          <input class="btn btn-submit" type="submit" value="Enviar" />
-					        </li>
-					        
-					      </ul>
+					    <form action="#" class="form-signin">
+					      	<ul>
+						        <li>
+						          <p class="left">
+						          	<label for="name" class="sr-only">Nombre</label>
+						            <input type="text" name="first_name" placeholder="Nombre" class="form-control" required autofocus/>
+						          </p>
+						          <p class="pull-right">
+						            <label for="last_name" class="sr-only">Apellido</label>
+						            <input type="text" name="last_name" placeholder="Apellido" class="form-control" required/>      
+						          </p>
+						        </li>
+						        
+						        <li>
+						          <p>
+						            <input type="email" name="email" placeholder="Email" class="form-control" required/>
+						          </p>
+						        </li>        
+						        <li>
+						          <textarea cols="46" rows="10" name="comments" placeholder="Escribenos un comentario" class="form-control" required></textarea>
+						        </li>
+						        <li>
+						          <button class="btn btn-lg btn-danger btn-block" type="submit">Sign in</button>
+						        </li>    
+					      	</ul>
 					    </form>  
-					  </div>
+					</div>
             	</div>
             </div>
             <!-- /row -->
