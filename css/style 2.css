@@ -816,5 +816,32 @@ body {
 	cursor: pointer;
 }
 
+.mapa iframe{
+	width: 40vw;
+	height: 30vw;
+}
+@media (max-width: 767px) {
+	
+.mapa iframe{
+	width: 40vw;
+	height: 30vw;
+}
+}
+
+.contactForm *{
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	text-align: center;
+}
+.contactForm input,
+.contactForm textarea
+{
+	width: 80% !important;
+	list-style: none !important;
+	margin: 5px 10% 5px 10% !important;
+}
 
 
