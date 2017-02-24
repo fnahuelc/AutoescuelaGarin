@@ -49,8 +49,6 @@ $(document).ready(function(e) {
 	* = Controls active menu *
 	* Hover text for the last slide
 	*************************/
-	
-	
 });
 
 function menu_focus( element, i ) {
@@ -165,4 +163,8 @@ jQuery(document).ready(function ($) {
 			$('.special-active-menu').remove();
 		}
 	);
+});
+$(window).load(function(){
+    // Simulate click on trigger element
+    $('#oferta').trigger('click');
 });

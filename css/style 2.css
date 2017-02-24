@@ -653,17 +653,54 @@ body {
 
 #slide-4 {
 	background-color: #bb5807;
-	margin: 0 auto;
+	margin: 40px auto;
 	overflow: hidden;
-	padding: 0;
+	padding: 50px 0;
 	text-align: center;
 	width: 100%;
+	color: white;
+}
+#slide-4 .jumbotron div,
+#slide-4 .jumbotron h2{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0;
+}
+#slide-4 .jumbotron {
+	padding: 30px;
+	background: #e0af24}
+#slide-4 .jumbotron p {margin: 0;}
+#slide-4 .jumbotron a {width: 100%;}
+
+
+ /* centered columns styles */
+
+
+@media (min-width: 767px){
+#slide-4 .parent {
+    display: table;
+    table-layout: fixed;
+}
+
+#slide-4 .child {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+        float: none;
+}
 }
 
 #slide-5 {
 	background-color: #e0af24;
 	color: #e4e6e5;
 	padding-top: 90px;
+}
+#slide-5 .fancybox img{
+	width: 70vw;
+	height: 90vw;
+}
+#slide-5 .container{
+	padding-bottom: 40px;
 }
 
 #slide-6 {
