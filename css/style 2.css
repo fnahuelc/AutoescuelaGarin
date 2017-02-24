@@ -921,7 +921,13 @@ body {
   z-index: 2;
   box-shadow: 2px 2px 2px red;
 }
-
+.whatsapp-icon{
+	background-image: url("../images/whatsapp-icon.png");
+	height: 82px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
 
 
 
