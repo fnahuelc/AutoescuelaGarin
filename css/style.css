@@ -30,7 +30,6 @@
     background-position: -10000px 0;
   }
 }
-a{pointer-events: initial !important;}
 
 #movingCar{
 
@@ -169,7 +168,7 @@ body {
 	color: #000;
 	font-family: "Titillium Web", sans-serif;
 	font-weight: 800;
-	transition: all .5 linear;
+	transition: all 1 linear;
 	cursor: pointer;
 	padding-bottom: 0;
 	padding-top: 15px;
@@ -211,7 +210,7 @@ body {
 	left: 0;
 	position: absolute;
 	top: 0;
-	transition: all .5 linear;
+	transition: all 1 linear;
 	width: 1%;
 	z-index: 9;
 }
@@ -318,7 +317,6 @@ body {
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-	background-attachment: relative;
 	background-position: center center;
 }
 
@@ -845,7 +843,6 @@ body {
 }
 
 
-*/
 .form-signin .form-control:focus {
   z-index: 2;
   box-shadow: 0 0 10px red;
@@ -861,8 +858,7 @@ body {
 	margin-bottom: 10px;
 }
 
-	.content-row i,
- {
+	.content-row i {
 		display: block;
 		margin: 0 auto;
 		max-height: 100%;
