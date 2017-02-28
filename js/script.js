@@ -1,4 +1,5 @@
 
+
 $(document).ready(function(e) {
 	$('.with-hover-text, .regular-link').click(function(e){
 		e.stopPropagation();
@@ -49,7 +50,51 @@ $(document).ready(function(e) {
 	* = Controls active menu *
 	* Hover text for the last slide
 	*************************/
+	$(function(index, element) {
+		var time = new Date().getTime();
+		var oldHref = $(this).attr('src');
+		
+		
+			if ( true) {
+				$(function() {
+					var pause = 10;
+					$(document).scroll(function(e) {
+						delay(function() {
+							
+							var tops = [];
+							
+							$('.story').each(function(index, element) {
+								tops.push( $(element).offset().top - 200 );
+							});
+				
+							var scroll_top = $(this).scrollTop();
+							
+							var lis = $('.nav > li');
+							
+							for ( var i=tops.length-1; i>=0; i-- ) {
+								if ( scroll_top >= tops[i] ) {
+									menu_focus( lis[i], i+1 );
+									break;
+								}
+							}
+						},
+						pause);
+					});
+					$(document).scroll();
+				});
+			}
+
+	});
+	
 });
+
+var delay = (function(){
+	var timer = 0;
+	return function(callback, ms){
+		clearTimeout (timer);
+		timer = setTimeout(callback, ms);
+	};
+})();
 
 function menu_focus( element, i ) {
 	if ( $(element).hasClass('active') ) {
@@ -61,7 +106,6 @@ function menu_focus( element, i ) {
 		}
 	}
 	
-	enable_arrows( i );
 		
 	if ( i == 1 || i == 6 )
 		$('.navbar').removeClass('inv');
@@ -84,20 +128,6 @@ function menu_focus( element, i ) {
 		1500,
 		'easeInOutQuart'
 	);
-}
-
-function enable_arrows( dataslide ) {
-	$('#arrows div').addClass('disabled');
-	if ( dataslide != 1 ) {
-		$('#arrow-up').removeClass('disabled');
-	}
-	if ( dataslide != 6 ) {
-		$('#arrow-down').removeClass('disabled');
-	}
-	if ( dataslide == 3 ) {
-		$('#arrow-left').removeClass('disabled');
-		$('#arrow-right').removeClass('disabled');
-	}
 }
 
 /*************
@@ -164,6 +194,8 @@ jQuery(document).ready(function ($) {
 		}
 	);
 });
+
+
 $(window).load(function(){
     // Simulate click on trigger element
     $('#oferta').trigger('click');

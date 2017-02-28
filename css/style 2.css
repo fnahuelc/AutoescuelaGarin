@@ -30,6 +30,8 @@
     background-position: -10000px 0;
   }
 }
+a{pointer-events: initial !important;}
+
 #movingCar{
 
   background: url(../images/bg_slider_bottom.png) repeat-x 0 0;
@@ -263,7 +265,7 @@ body {
 		padding-left: 0;
 	}
 	
-	.icon {
+	.icon, .fa{
 		margin-right: 12px;
 	}
 			
@@ -512,30 +514,6 @@ body {
 	
 	.content-row {
 		padding-top: 45px;
-	}
-	
-	.content-row i,
-	#about-row-5 i {
-		display: block;
-		margin: 0 auto;
-		max-height: 100%;
-		max-width: 100%;
-	}
-	
-	.content-row h2 {
-		font-size: 28px;
-		padding-bottom: 40px;
-	}
-	
-	.content-row h4 {
-		font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-		font-size: 20px;
-		font-weight: 300;
-	}
-	
-	i {
-		font-size: 80px;
-		color: white;
 	}
 	
 	.videos {
@@ -805,40 +783,6 @@ body {
 	width: 30px;
 }
 
-#arrows div.disabled {
-	cursor: default;
-}
-
-#arrow-up {
-	background-position: 30px 0;
-	left: 25px;
-	top: 0;
-}
-
-#arrow-up.disabled {
-	background-position: 0 0;
-}
-
-#arrow-down {
-	background-position: 30px -30px;
-	left: 25px;
-	bottom: 0;
-}
-
-#arrow-down.disabled {
-	background-position: 0 -30px;
-}
-
-#arrow-left {
-	background-position: 30px -60px;
-	left: 0;
-	top: 25px;
-}
-
-#arrow-left.disabled {
-	background-position: 0 -60px;
-}
-
 #arrow-right {
 	background-position: 30px -90px;
 	right: 0;
@@ -853,17 +797,6 @@ body {
 	cursor: pointer;
 }
 
-.mapa iframe{
-	width: 40vw;
-	height: 438px;
-}
-@media (max-width: 767px) {
-
-	.mapa iframe{
-		width: 90vw;
-	height: 60vw;
-	}
-}
 #slide-6 .container>div {
 	padding: 10px 0;
 }
@@ -875,59 +808,81 @@ body {
 	text-align: center;
 	color: #ff4842;
 }
-.contactenos>div{
+#slide-6 .jumbotron {
+	background-color: #bb4141;
+	padding: 30px;
+	text-align: right;
+	}
+#slide-6 .title-row {
 	padding: 0;
-	margin: 0;}
-.contactenos .centrar{
-	padding-left: 15px;
-}
-.contactenos .centrar h1
-{
-	width: 90%;
-	margin-left: 5vw;
-	margin-right: 5vw;
-	padding-top: 10px;
-}
-
-.contactForm *{
-	float: left;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	width: 100%;
 	text-align: center;
 }
-.contactForm li{
-	width: 90% ;
-	list-style: none ;
-	margin: 10px 5vw 10px 5vw ;
-}
-.contactForm input,
-.contactForm textarea{
-	margin:0;
+#slide-6 .jumbotron ul{
+	list-style: none;
 	padding: 0;
-	width: 100%;
 }
-.contactForm textarea{
+#slide-6 .jumbotron .hr{
+	margin: 5px 15px 0 0;
+	float: right;
+	visibility: hidden;
+}
+
+.mapa iframe{
+	width: 100%;
+	height: 212px;	
+
+
+}
+@media (max-width: 767px) {
+	#slide-6 .jumbotron {
+	text-align: center;
+	}
+
+	.mapa iframe{
+		width: 90vw;
+	height: 60vw;
+	}
+}
+
+
+*/
+.form-signin .form-control:focus {
+  z-index: 2;
+  box-shadow: 0 0 10px red;
 }
 .form-signin .form-control {
-  height: auto;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
 }
-.form-signin .form-control:focus {
-  z-index: 2;
-  box-shadow: 2px 2px 2px red;
-}
-.whatsapp-icon{
-	background-image: url("../images/whatsapp-icon.png");
-	height: 82px;
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
+.contactForm textarea{
+	height: 6em;
+	margin-bottom: 10px;
 }
 
+	.content-row i,
+ {
+		display: block;
+		margin: 0 auto;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	
+	.content-row h2 {
+		font-size: 28px;
+		padding-bottom: 40px;
+	}
+	
+	.content-row h4 {
+		font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		font-size: 20px;
+		font-weight: 300;
+	}
+	
+	i {
+		font-size: 40px !important;
+		color: white;
+	}
 
-
+	#contact-row-4{float: none;}
