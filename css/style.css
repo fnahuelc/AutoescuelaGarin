@@ -233,7 +233,15 @@ body {
 	background-color: #F00 !important;
 }
 
+.botonSandwich{
+	top:4px;
+	height: 30px;
+	border-color: #000;
+}
+.botonSandwich span{
+	background-color: #000 !important;
 
+}
 @media (max-width: 767px) {
 	
 	.nav li {
