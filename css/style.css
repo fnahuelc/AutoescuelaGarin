@@ -317,6 +317,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
+	height: calc(100vh - 28px);
 	background-position: center center;
 }
 
@@ -396,7 +397,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 700px;
+	height: calc(100vh - 28px);
 }
 #myCarousel .main-text{
     position: absolute;
@@ -428,7 +429,7 @@ body {
 #myCarousel .item{
 	background-size: cover;
 	background-position: center center;
-	height: 700px;
+	height: calc(100vh - 28px);
 }   	
 
 #myCarousel .item.uno {background-image: url("../images/carousel1.jpg")}
