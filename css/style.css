@@ -95,7 +95,7 @@
  * Version: 1.0
  * URL: http://blacktie.co
  */
- 
+
 .font-thin {
 	font-family: "Titillium Web", sans-serif;
 	font-weight: 200;
@@ -243,60 +243,60 @@ body {
 
 }
 @media (max-width: 767px) {
-	
+
 	.nav li {
 		text-align: left;
 		white-space: nowrap;
 	}
-	
+
 	.navbar-responsive-collapse  {
 		width: 100%;
 	}
-	
+
 	.active-menu {
 		display: none !important;
 	}
-	
+
 	.navbar-toggle {
 		margin-right: 10px;
 	}
-	
+
 	.navbar {
 		background-color: #e4e6e5 !important;
 		padding: 0;
 	}
-	
+
 	.navbar .nav a {
 		color: #e4e6e5;
 		font-size: 16px;
 		padding-left: 0;
 	}
-	
+
 	.icon, .fa{
 		margin-right: 12px;
 	}
-			
+
 	.nav li[data-slide="1"],
 	.nav li[data-slide="6"] {
 		background-color: #2f2f2f;
 	}
-	
+
 	.nav li[data-slide="2"] {
 		background-color: #1abc9c;
 	}
-	
+
 	.nav li[data-slide="3"] {
 		background-color: #e74c3c;
 	}
-	
+
 	.nav li[data-slide="4"] {
 		background-color: #34495e;
 	}
-	
+
 	.nav li[data-slide="5"] {
 		background-color: #e67e22;
 	}
-	
+
 	.navbar-brand {
 		margin: 0;
 		text-align: left;
@@ -349,31 +349,31 @@ body {
 	#home-row-2 {
 		padding-top: 25px;
 	}
-	
+
 	#home-row-1 h1 {
 		font-size: 54px;
 	}
-	
+
 	#home-row-1 h4 {
 		font-size: 32px;
 	}
-	
+
 	#home-row-2 {
 		font-size: 25px;
 	}
-	
+
 	#home-row-2 .col-12 {
 		height: 232px;
 		padding-top: 30px;
 	}
-	
+
 	#home-row-2 .col-12 .home-hover {
 		height: 166px;
 		overflow: hidden;
 		padding-top: 26px;
 		transition: all ease-in .5s;
 	}
-	
+
 	#home-row-2 .col-12 .home-hover:hover {
 		height: 166px;
 		padding-top: 0;
@@ -384,15 +384,15 @@ body {
 	#home-row-2 {
 		padding-top: 16px;
 	}
-	
+
 	#home-row-1 h1 {
 		font-size: 35px;
 	}
-	
+
 	#home-row-1 h4 {
 		font-size: 21px;
 	}
-	
+
 	#home-row-2 {
 		font-size: 16px;
 	}
@@ -438,13 +438,17 @@ body {
 	background-size: cover;
 	background-position: center center;
 	height: calc(100vh - 28px);
-}   	
+}
 
 #myCarousel .item.uno {background-image: url("../images/carousel1.jpg")}
 #myCarousel .item.dos {background-image: url("../images/carousel2.jpg")}
 #myCarousel .item.tres {background-image: url("../images/carousel3.jpg")}
 #myCarousel .item.cuatro{background-image: url("../images/carousel4.jpg")}
 #myCarousel .item.cinco{background-image: url("../images/carousel5.jpeg")}
+#myCarousel .item.seis{background-image: url("../images/carousel6.jpeg")}
+
+#myCarousel .item.tres {background-position: button)}
+
 .carousel-control i{
 	font-size: 50px;
 	top: 50%;
@@ -513,7 +517,7 @@ body {
 		font-size: 45px;
 		padding-bottom: 50px;
 	}
-	
+
 	.line-row .hr {
 		background-color: #e4e6e5;
 		height: 5px;
@@ -522,17 +526,17 @@ body {
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
-	
+
 	.subtitle-row {
 		font-size: 35px;
 		padding-bottom: 40px;
 		padding-top: 40px;
 	}
-	
+
 	.content-row {
 		padding-top: 45px;
 	}
-	
+
 	.videos {
 		margin: 0px 30px 0px 30px;
 		padding: 0 0 70px 0;
@@ -548,22 +552,22 @@ body {
 		font-size: 34px;
 		padding-bottom: 33px;
 	}
-	
+
 	.subtitle-row {
 		font-size: 26px;
 		padding-bottom: 26px;
 		padding-top: 26px;
 	}
-	
+
 	.content-row {
 		padding-top: 29px;
 	}
-	
+
 	.content-row h2 {
 		font-size: 24px;
 		padding-bottom: 26px;
 	}
-	
+
 	.content-row h4 {
 		font-size: 20px;
 	}
@@ -611,7 +615,7 @@ body {
 	padding: 20px;
 	border-radius: 0 0 5px 5px;
 }
-#slide-3 .jumbotron.content h2, 
+#slide-3 .jumbotron.content h2,
 #slide-3 .jumbotron.content h4,
 #slide-3 .jumbotron.content p{
 	margin: 0;
@@ -710,7 +714,7 @@ body {
 		background-image: none;
 	}
 }
-	
+
 	#slide-6 .line-row .hr {
 		background-color: #4e4e4e;
 		color: #4e4e4e;
@@ -728,30 +732,30 @@ body {
 		margin-top: 1em;
 	}
 }
-	
+
 	#contact-row-4 {
 		padding-top: 125px;
 	}
-	
+
 	#contact-row-4 .col-12 {
 		height: 175px;
 		overflow: hidden;
 		padding-top: 20px;
 		transition: all ease-in .5s;
 	}
-	
+
 	#contact-row-4 img {
 		display: block;
 		margin: 0 auto;
 		max-height: 100%;
 		max-width: 100%;
 	}
-	
+
 	#contact-row-4 .col-12:hover {
 		height: 175px;
 		padding-top: 0;
 	}
-	
+
 	#contact-row-4 .col-12 .hover-text {
 		display: none;
 		font-size: 20px;
@@ -846,7 +850,7 @@ body {
 
 .mapa iframe{
 	width: 100%;
-	height: 212px;	
+	height: 212px;
 
 
 }
@@ -883,18 +887,18 @@ body {
 		max-height: 100%;
 		max-width: 100%;
 	}
-	
+
 	.content-row h2 {
 		font-size: 28px;
 		padding-bottom: 40px;
 	}
-	
+
 	.content-row h4 {
 		font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 		font-size: 20px;
 		font-weight: 300;
 	}
-	
+
 	i {
 		font-size: 40px !important;
 		color: white;
