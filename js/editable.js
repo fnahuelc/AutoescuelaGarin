@@ -1,9 +1,6 @@
-$(function(){
-    $.ajax('https://fnahuelc.github.io/AutoescuelaGarin/admin.html', function (data) {
-      var data = $(data).find('h1#adminPromocionExplicacion');
-      console.log(data)
-  });
+$.get( "./admin.html", function( data ) {
+  $( "#adminPromocionExplicacion" ).html( data );
+  alert( "Load was performed." );
+});
 
     // $("#promocionExplicacion").val(promocionExplicacion);
-
-   });
