@@ -1,6 +1,6 @@
 $.get( "./admin.html", function( data ) {
-  $( "#adminPromocionExplicacion" ).html( data );
-  alert( "Load was performed." );
+  var info = $( "#adminPromocionExplicacion" ).html( data );
+  console.log(info)
 });
 
     // $("#promocionExplicacion").val(promocionExplicacion);
