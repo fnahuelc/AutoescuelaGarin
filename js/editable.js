@@ -1,4 +1,4 @@
 $(function(){
-     var promocionExplicacion = $("#promocionExplicacion").load("./admin.html body");
+     var promocionExplicacion = $("#promocionExplicacion").load("./admin.html");
 
    });
