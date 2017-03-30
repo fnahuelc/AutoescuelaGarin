@@ -1,5 +1,5 @@
 $.get( "./admin.html", function( data ) {
-  var info = $( "#adminPromocionExplicacion" ).html( data );
+  var info = $( "#adminPromocionExplicacion" ).val( data );
   console.log(info)
 });
 
