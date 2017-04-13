@@ -513,6 +513,17 @@ body {
 	padding-top: 90px;
 }
 
+.beneficios{
+  margin-top:60px;
+}
+.beneficios h2, .beneficios h3{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  margin-bottom: 0 !important;
+
+}
+]
 	.title-row {
 		font-size: 45px;
 		padding-bottom: 50px;

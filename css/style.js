@@ -329,7 +329,20 @@ export default StyleSheet.create({
         "position": "relative",
         "zIndex": 120
     },
-    "title-row": {
+    "beneficios": {
+        "marginTop": 60
+    },
+    "beneficios h2": {
+        "marginTop": "0 !important",
+        "marginBottom": "0 !important",
+        "paddingTop": "0 !important"
+    },
+    "beneficios h3": {
+        "marginTop": "0 !important",
+        "marginBottom": "0 !important",
+        "paddingTop": "0 !important"
+    },
+    "]\ttitle-row": {
         "fontSize": 45,
         "paddingBottom": 50
     },
